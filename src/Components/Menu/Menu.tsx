@@ -1,22 +1,31 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Logo } from "./Components";
 import { MenuLinks } from "./Components";
 
-import "./Menu.css";
+import "./Menu.scss";
 
 function Menu() {
   return (
-    <section
-      className="navbar custom-navbar navbar-fixed-top"
-      role="navigation"
-    >
+    <section className="custom-navbar">
       <div className="container">
-        <div className="navbar-header">
-          <Logo />
-        </div>
+        <div className="row">
+          <div className="col-2">
+            <Logo />
+          </div>
 
-        <MenuLinks />
+          <div className="col-7">
+            <MenuLinks />
+          </div>
+
+          <div className="col-3">
+            <a href="#s" className="header-phone">
+              <span><FontAwesomeIcon icon="phone-alt" /></span>
+              +7 (917) 953-49-93
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

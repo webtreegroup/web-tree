@@ -1,59 +1,62 @@
-/*---------------------------------------
-      HOME  & SLIDER            
-  -----------------------------------------*/
+#home {
+  padding: 0;
 
-  #home {
-    padding: 0;
-  }
-
-  #home h1 {
+  h1 {
     color: #ffffff;
   }
 
-  #home h3 {
+  h3 {
     color: #f9f9f9;
     font-size: 16px;
     font-weight: 300;
     margin: 0;
     padding: 5px 0 40px 0;
   }
+}
 
-  @media (min-width: 768px) {
-    .home-slider .col-md-6 {
-      padding-left: 0;
-    }
+@media (min-width: 768px) {
+  .home-slider .col-md-6 {
+    padding-left: 0;
   }
+}
 
-  .home-slider .caption {
+.home-slider {
+  .caption {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: left;
-    background-color: rgba(20,20,20,0.2);
+    background-color: rgba(20, 20, 20, 0.2);
     height: 100%;
     color: #fff;
     cursor: e-resize;
   }
 
-  .home-slider .item {
+  .item {
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: cover;
     height: 650px;
-    background-color: #FF3;
+    background-color: #ff3;
   }
-  
-  .caption h3 a { color: #FFF; }
-  .caption h3 a:hover { color: #FF3; }
 
-  .home-slider .item-first {
+  .item-first {
     background-image: url(./images/slider-image1.jpg);
+    background-position: center;
   }
 
-  .home-slider .item-second {
+  .item-second {
     background-image: url(./images/slider-image2.jpg);
   }
 
-  .home-slider .item-third {
+  .item-third {
     background-image: url(./images/slider-image3.jpg);
   }
+}
+
+.caption h3 a {
+  color: #fff;
+}
+.caption h3 a:hover {
+  color: #ff3;
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 
-import "./Home.css";
+import "./Home.scss";
 
 function Home() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -16,8 +16,6 @@ function Home() {
     <section id="home">
       <div className="home-slider">
         <Slider {...settings}>
-        
-      
           <div className="item item-first">
             <div className="caption">
               <div className="container">
@@ -59,33 +57,33 @@ function Home() {
           </div>
 
           <div className="item item-third">
-              <div className="caption">
-                <div className="container">
-                  <div className="col-md-6 col-sm-12">
-                    <h1>Efficient Learning Methods</h1>
-                    <h3>
-                      Nam eget sapien vel nibh euismod vulputate in vel nibh.
-                      Quisque eu ex eu urna venenatis sollicitudin ut at libero.
-                      Visit{" "}
-                      <a
-                        rel="nofollow"
-                        href="https://www.facebook.com/templatemo"
-                      >
-                        templatemo
-                      </a>{" "}
-                      page.
-                    </h3>
+            <div className="caption">
+              <div className="container">
+                <div className="col-md-6 col-sm-12">
+                  <h1>Efficient Learning Methods</h1>
+                  <h3>
+                    Nam eget sapien vel nibh euismod vulputate in vel nibh.
+                    Quisque eu ex eu urna venenatis sollicitudin ut at libero.
+                    Visit{" "}
                     <a
-                      href="#contact"
-                      className="section-btn btn btn-default smoothScroll"
+                      rel="nofollow"
+                      href="https://www.facebook.com/templatemo"
                     >
-                      Let's chat
-                    </a>
-                  </div>
+                      templatemo
+                    </a>{" "}
+                    page.
+                  </h3>
+                  <a
+                    href="#contact"
+                    className="section-btn btn btn-default smoothScroll"
+                  >
+                    Let's chat
+                  </a>
                 </div>
               </div>
             </div>
-            </Slider>
+          </div>
+        </Slider>
       </div>
     </section>
   );

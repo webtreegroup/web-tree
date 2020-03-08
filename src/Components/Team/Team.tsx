@@ -1,5 +1,10 @@
 import React from "react";
 
+import author1 from 'images/author-image1.jpg';
+import author2 from 'images/author-image2.jpg';
+import author3 from 'images/author-image3.jpg';
+import author4 from 'images/author-image4.jpg';
+
 import './Team.css';
 
 function Team() {
@@ -19,7 +24,7 @@ function Team() {
             <div className="team-thumb">
               <div className="team-image">
                 <img
-                  src="images/author-image1.jpg"
+                  src={author1}
                   className="img-responsive"
                   alt=""
                 />
@@ -46,7 +51,7 @@ function Team() {
             <div className="team-thumb">
               <div className="team-image">
                 <img
-                  src="images/author-image2.jpg"
+                  src={author2}
                   className="img-responsive"
                   alt=""
                 />
@@ -70,7 +75,7 @@ function Team() {
             <div className="team-thumb">
               <div className="team-image">
                 <img
-                  src="images/author-image3.jpg"
+                  src={author3}
                   className="img-responsive"
                   alt=""
                 />
@@ -97,7 +102,7 @@ function Team() {
             <div className="team-thumb">
               <div className="team-image">
                 <img
-                  src="images/author-image4.jpg"
+                  src={author4}
                   className="img-responsive"
                   alt=""
                 />

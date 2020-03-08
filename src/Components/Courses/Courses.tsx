@@ -1,6 +1,16 @@
 import React from "react";
 
-import './Courses.css';
+import image1 from 'images/courses-image1.jpg';
+import image2 from 'images/courses-image2.jpg';
+import image3 from 'images/courses-image3.jpg';
+import image4 from 'images/courses-image4.jpg';
+import image5 from 'images/courses-image5.jpg';
+import author1 from 'images/author-image1.jpg';
+import author2 from 'images/author-image2.jpg';
+import author3 from 'images/author-image3.jpg';
+import author4 from 'images/author-image4.jpg';
+
+import './Courses.scss';
 
 function Courses() {
   return (
@@ -15,14 +25,14 @@ function Courses() {
               </h2>
             </div>
 
-            <div className="owl-carousel owl-theme owl-courses">
+            <div className="row">
               <div className="col-md-4 col-sm-4">
                 <div className="item">
                   <div className="courses-thumb">
                     <div className="courses-top">
                       <div className="courses-image">
                         <img
-                          src="images/courses-image1.jpg"
+                          src={image1}
                           className="img-responsive"
                           alt=""
                         />
@@ -49,7 +59,7 @@ function Courses() {
                     <div className="courses-info">
                       <div className="courses-author">
                         <img
-                          src="images/author-image1.jpg"
+                          src={author1}
                           className="img-responsive"
                           alt=""
                         />
@@ -71,7 +81,7 @@ function Courses() {
                     <div className="courses-top">
                       <div className="courses-image">
                         <img
-                          src="images/courses-image2.jpg"
+                          src={image2}
                           className="img-responsive"
                           alt=""
                         />
@@ -98,7 +108,7 @@ function Courses() {
                     <div className="courses-info">
                       <div className="courses-author">
                         <img
-                          src="images/author-image2.jpg"
+                          src={author2}
                           className="img-responsive"
                           alt=""
                         />
@@ -120,7 +130,7 @@ function Courses() {
                     <div className="courses-top">
                       <div className="courses-image">
                         <img
-                          src="images/courses-image3.jpg"
+                          src={image3}
                           className="img-responsive"
                           alt=""
                         />
@@ -147,7 +157,7 @@ function Courses() {
                     <div className="courses-info">
                       <div className="courses-author">
                         <img
-                          src="images/author-image3.jpg"
+                          src={author3}
                           className="img-responsive"
                           alt=""
                         />
@@ -169,7 +179,7 @@ function Courses() {
                     <div className="courses-top">
                       <div className="courses-image">
                         <img
-                          src="images/courses-image4.jpg"
+                          src={image4}
                           className="img-responsive"
                           alt=""
                         />
@@ -196,7 +206,7 @@ function Courses() {
                     <div className="courses-info">
                       <div className="courses-author">
                         <img
-                          src="images/author-image1.jpg"
+                          src={author4}
                           className="img-responsive"
                           alt=""
                         />
@@ -218,7 +228,7 @@ function Courses() {
                     <div className="courses-top">
                       <div className="courses-image">
                         <img
-                          src="images/courses-image5.jpg"
+                          src={image5}
                           className="img-responsive"
                           alt=""
                         />
@@ -245,7 +255,7 @@ function Courses() {
                     <div className="courses-info">
                       <div className="courses-author">
                         <img
-                          src="images/author-image2.jpg"
+                          src={author1}
                           className="img-responsive"
                           alt=""
                         />

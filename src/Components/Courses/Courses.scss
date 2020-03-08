@@ -1,0 +1,98 @@
+#courses {
+  text-align: center;
+
+  .section-title {
+    text-align: center;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  &-thumb {
+    background: #f9f9f9;
+    position: relative;
+  }
+  
+  &-top {
+    position: relative;
+  }
+  
+  &-image {
+    background: linear-gradient(to right, #202020, #101010);
+  }
+  
+  &-date {
+    background: linear-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 25px;
+
+    span {
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  &-author {
+    span {
+      font-size: 14px;
+      font-weight: bold;
+    } 
+  }
+  
+  &-detail {
+    padding: 25px 25px 15px 25px;
+
+    h3 {
+      margin: 0 0 2px 0;
+    }
+  }
+  
+  &-info {
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+    clear: both;
+    padding: 15px 25px;
+  }
+  
+  &-author {
+    display: inline-block;
+    vertical-align: middle;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    img {
+      display: inline-block !important;
+      border-radius: 50px;
+      width: 50px !important;
+      height: 50px;
+      margin-right: 10px;
+    }
+  }
+  
+  &-price {
+    float: right;
+    margin-top: 10px;
+
+    span {
+      background: #29ca8e;
+      border-radius: 2px;
+      color: #ffffff;
+      display: block;
+      padding: 5px 10px;
+    }
+
+    &.free span {
+      background: #3f51b5;
+    }
+  }
+}
+

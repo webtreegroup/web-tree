@@ -1,5 +1,14 @@
 import React from 'react';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import {
+  faUsers,
+  faCertificate,
+  faChartBar,
+  faPhoneAlt
+} from '@fortawesome/free-solid-svg-icons'
+
 import {
   Preloader,
   Menu,
@@ -18,6 +27,13 @@ import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 import './App.css';
+
+library.add(
+  faUsers,
+  faCertificate,
+  faChartBar,
+  faPhoneAlt
+);
 
 function App() {
   return (
