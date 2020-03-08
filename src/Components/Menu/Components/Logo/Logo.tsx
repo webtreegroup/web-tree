@@ -2,7 +2,7 @@ import React from 'react';
 
 function Preloader() {
   return (
-    <a href="#s" className="navbar-brand">Known</a>
+    <a href="#s" className="navbar-brand">Web-Tree</a>
   );
 }
 

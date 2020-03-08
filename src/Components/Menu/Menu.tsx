@@ -1,29 +1,24 @@
-import React from 'react';
+import React from "react";
 
-import { Logo } from './Components';
-import { MenuLinks } from './Components';
+import { Logo } from "./Components";
+import { MenuLinks } from "./Components";
 
-import './Menu.css';
+import "./Menu.css";
 
 function Menu() {
   return (
-    <section className="navbar custom-navbar navbar-fixed-top" role="navigation">
-          <div className="container">
+    <section
+      className="navbar custom-navbar navbar-fixed-top"
+      role="navigation"
+    >
+      <div className="container">
+        <div className="navbar-header">
+          <Logo />
+        </div>
 
-               <div className="navbar-header">
-                    <button className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                         <span className="icon icon-bar"></span>
-                         <span className="icon icon-bar"></span>
-                         <span className="icon icon-bar"></span>
-                    </button>
-         
-                    <Logo />
-               </div>
-
-               <MenuLinks />
-
-          </div>
-     </section>
+        <MenuLinks />
+      </div>
+    </section>
   );
 }
 
