@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {
@@ -6,7 +12,10 @@ import {
   faChartBar,
   faEnvelope,
   faPhoneAlt,
-  faUsers
+  faUsers,
+  faCalendar,
+  faClock,
+  faStar
 } from '@fortawesome/free-solid-svg-icons'
 
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -36,23 +45,43 @@ library.add(
   faChartBar,
   faEnvelope,
   faPhoneAlt,
-  faUsers
+  faUsers,
+  faCalendar,
+  faClock,
+  faStar
 );
 
 function App() {
   return (
-    <div className="App">
-      {/* <Preloader /> */}
-      <Menu />
-      <Home />
-      <Feature />
-      <About />
-      <Team />
-      <Courses />
-      <Testimonial />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        {/* <Preloader /> */}
+        <Switch>
+          <Route exact path="/">
+            home
+          </Route>
+          <Route path="/about">
+            about
+          </Route>
+          <Route path="/our-services">
+            our services
+          </Route>
+          <Route path="/contact">
+            contact
+          </Route>
+        </Switch>
+
+        <Menu />
+        <Home />
+        <Feature />
+        <About />
+        <Team />
+        <Courses />
+        <Testimonial />
+        <Contact />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

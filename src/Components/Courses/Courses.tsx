@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import image1 from 'images/courses-image1.jpg';
 import image2 from 'images/courses-image2.jpg';
@@ -14,7 +15,7 @@ import './Courses.scss';
 
 function Courses() {
   return (
-    <section id="courses">
+    <section id="courses" className="courses">
       <div className="container">
         <div className="row">
           <div className="col-md-12 col-sm-12">
@@ -39,18 +40,18 @@ function Courses() {
                       </div>
                       <div className="courses-date">
                         <span>
-                          <i className="fa fa-calendar"></i> 12 / 7 / 2018
+                          <FontAwesomeIcon icon="calendar" /> 12 / 7 / 2018
                         </span>
                         <span>
-                          <i className="fa fa-clock-o"></i> 7 Hours
+                          <FontAwesomeIcon icon="clock" /> 7 Hours
                         </span>
                       </div>
                     </div>
 
                     <div className="courses-detail">
-                      <h3>
+                      <h5>
                         <a href="#s">Social Media Management</a>
-                      </h3>
+                      </h5>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>
@@ -88,18 +89,18 @@ function Courses() {
                       </div>
                       <div className="courses-date">
                         <span>
-                          <i className="fa fa-calendar"></i> 20 / 7 / 2018
+                          <FontAwesomeIcon icon="calendar" /> 20 / 7 / 2018
                         </span>
                         <span>
-                          <i className="fa fa-clock-o"></i> 4.5 Hours
+                          <FontAwesomeIcon icon="clock" /> 4.5 Hours
                         </span>
                       </div>
                     </div>
 
                     <div className="courses-detail">
-                      <h3>
+                      <h5>
                         <a href="#s">Graphic & Web Design</a>
-                      </h3>
+                      </h5>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>
@@ -137,18 +138,18 @@ function Courses() {
                       </div>
                       <div className="courses-date">
                         <span>
-                          <i className="fa fa-calendar"></i> 15 / 8 / 2018
+                          <FontAwesomeIcon icon="calendar" /> 15 / 8 / 2018
                         </span>
                         <span>
-                          <i className="fa fa-clock-o"></i> 6 Hours
+                          <FontAwesomeIcon icon="clock" /> 6 Hours
                         </span>
                       </div>
                     </div>
 
                     <div className="courses-detail">
-                      <h3>
+                      <h5>
                         <a href="#s">Marketing Communication</a>
-                      </h3>
+                      </h5>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>
@@ -186,18 +187,18 @@ function Courses() {
                       </div>
                       <div className="courses-date">
                         <span>
-                          <i className="fa fa-calendar"></i> 10 / 8 / 2018
+                          <FontAwesomeIcon icon="calendar" /> 10 / 8 / 2018
                         </span>
                         <span>
-                          <i className="fa fa-clock-o"></i> 8 Hours
+                          <FontAwesomeIcon icon="clock" /> 8 Hours
                         </span>
                       </div>
                     </div>
 
                     <div className="courses-detail">
-                      <h3>
+                      <h5>
                         <a href="#s">Summer Kids</a>
-                      </h3>
+                      </h5>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>
@@ -235,18 +236,18 @@ function Courses() {
                       </div>
                       <div className="courses-date">
                         <span>
-                          <i className="fa fa-calendar"></i> 5 / 10 / 2018
+                          <FontAwesomeIcon icon="calendar" /> 5 / 10 / 2018
                         </span>
                         <span>
-                          <i className="fa fa-clock-o"></i> 10 Hours
+                          <FontAwesomeIcon icon="clock" /> 10 Hours
                         </span>
                       </div>
                     </div>
 
                     <div className="courses-detail">
-                      <h3>
+                      <h5>
                         <a href="#s">Business &amp; Management</a>
-                      </h3>
+                      </h5>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>

@@ -1,9 +1,16 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-function Preloader() {
+function Logo() {
   return (
-    <a href="#s" className="navbar-brand">Web-Tree</a>
+    <NavLink
+      to="/"
+      activeClassName="active"
+      className="navbar-brand"
+      exact>
+      Web-Tree
+    </NavLink>
   );
 }
 
-export default Preloader;
+export default Logo;

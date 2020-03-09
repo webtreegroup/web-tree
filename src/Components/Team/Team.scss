@@ -1,0 +1,39 @@
+.team-info {
+  padding: 20px 30px;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.team-image img {
+  width: 100%;
+}
+
+.team-thumb {
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+
+  .social-icon {
+    border-top: 1px solid #f0f0f0;
+    padding: 4px 20px 0 20px;
+
+    li a {
+      background: #ffffff;
+      color: #252020;
+      display: inline-block;
+      border-radius: 100px;
+      font-size: 15px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+      position: relative;
+      margin: 5px 5px 5px 0;
+    }
+  }
+} 

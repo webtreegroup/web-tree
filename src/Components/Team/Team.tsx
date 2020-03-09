@@ -6,7 +6,7 @@ import author2 from 'images/author-image2.jpg';
 import author3 from 'images/author-image3.jpg';
 import author4 from 'images/author-image4.jpg';
 
-import './Team.css';
+import './Team.scss';
 
 function Team() {
   return (
@@ -90,7 +90,7 @@ function Team() {
                   <a href="#s"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
                 </li>
                 <li>
-                  <a href="#s"><FontAwesomeIcon icon={['fab', 'envelope']} /></a>
+                  <a href="#s"><FontAwesomeIcon icon="envelope" /></a>
                 </li>
                 <li>
                   <a href="#s"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>

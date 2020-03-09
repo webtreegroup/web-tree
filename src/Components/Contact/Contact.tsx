@@ -1,5 +1,7 @@
 import React from "react";
 
+import contact from 'images/contact-image.jpg';
+
 import './Contact.css';
 
 function Contact() {
@@ -51,7 +53,7 @@ function Contact() {
           <div className="col-md-6 col-sm-12">
             <div className="contact-image">
               <img
-                src="images/contact-image.jpg"
+                src={contact}
                 className="img-responsive"
                 alt="Smiling Two Girls"
               />

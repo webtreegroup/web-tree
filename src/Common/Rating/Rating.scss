@@ -1,0 +1,12 @@
+.rating {
+  color: #3f51b5;
+  font-size: 12px;
+
+  svg {
+    margin-right: 3px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,5 +1,12 @@
 import React from "react";
 
+import { Rating } from "Common";
+
+import tst1 from 'images/tst-image1.jpg';
+import tst2 from 'images/tst-image2.jpg';
+import tst3 from 'images/tst-image3.jpg';
+import tst4 from 'images/tst-image4.jpg';
+
 import './Testimonial.css';
 
 function Testimonial() {
@@ -14,12 +21,12 @@ function Testimonial() {
               </h2>
             </div>
 
-            <div className="owl-carousel owl-theme owl-client">
+            <div className="row">
               <div className="col-md-4 col-sm-4">
                 <div className="item">
                   <div className="tst-image">
                     <img
-                      src="images/tst-image1.jpg"
+                      src={tst1}
                       className="img-responsive"
                       alt=""
                     />
@@ -33,13 +40,7 @@ function Testimonial() {
                     education and professional job search assistance. I’d
                     recommend it to everyone!
                   </p>
-                  <div className="tst-rating">
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                  </div>
+                  <Rating quantity={5} />
                 </div>
               </div>
 
@@ -47,7 +48,7 @@ function Testimonial() {
                 <div className="item">
                   <div className="tst-image">
                     <img
-                      src="images/tst-image2.jpg"
+                      src={tst2}
                       className="img-responsive"
                       alt=""
                     />
@@ -61,11 +62,7 @@ function Testimonial() {
                     course and the great teacher who was able to make it
                     interesting.
                   </p>
-                  <div className="tst-rating">
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                  </div>
+                  <Rating quantity={3} />
                 </div>
               </div>
 
@@ -73,7 +70,7 @@ function Testimonial() {
                 <div className="item">
                   <div className="tst-image">
                     <img
-                      src="images/tst-image3.jpg"
+                      src={tst3}
                       className="img-responsive"
                       alt=""
                     />
@@ -86,12 +83,7 @@ function Testimonial() {
                     Donec erat libero, blandit vitae arcu eu, lacinia placerat
                     justo. Sed sollicitudin quis felis vitae hendrerit.
                   </p>
-                  <div className="tst-rating">
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                  </div>
+                  <Rating quantity={2} />
                 </div>
               </div>
 
@@ -99,7 +91,7 @@ function Testimonial() {
                 <div className="item">
                   <div className="tst-image">
                     <img
-                      src="images/tst-image4.jpg"
+                      src={tst4}
                       className="img-responsive"
                       alt=""
                     />
@@ -112,12 +104,7 @@ function Testimonial() {
                     Nam eget mi eu ante faucibus viverra nec sed magna. Vivamus
                     viverra sapien ex, elementum varius ex sagittis vel.
                   </p>
-                  <div className="tst-rating">
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                  </div>
+                  <Rating quantity={4} />
                 </div>
               </div>
             </div>
