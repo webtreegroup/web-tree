@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import author1 from 'images/author-image1.jpg';
 import author2 from 'images/author-image2.jpg';
@@ -35,13 +36,13 @@ function Team() {
               </div>
               <ul className="social-icon">
                 <li>
-                  <a href="#s" className="fa fa-facebook-square"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'facebook-square']} /></a>
                 </li>
                 <li>
-                  <a href="#s" className="fa fa-twitter"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
                 </li>
                 <li>
-                  <a href="#s" className="fa fa-instagram"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
                 </li>
               </ul>
             </div>
@@ -62,10 +63,10 @@ function Team() {
               </div>
               <ul className="social-icon">
                 <li>
-                  <a href="#s" className="fa fa-google"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'google']} /></a>
                 </li>
                 <li>
-                  <a href="#s" className="fa fa-instagram"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
                 </li>
               </ul>
             </div>
@@ -86,13 +87,13 @@ function Team() {
               </div>
               <ul className="social-icon">
                 <li>
-                  <a href="#s" className="fa fa-twitter"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
                 </li>
                 <li>
-                  <a href="#s" className="fa fa-envelope-o"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'envelope']} /></a>
                 </li>
                 <li>
-                  <a href="#s" className="fa fa-linkedin"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
                 </li>
               </ul>
             </div>
@@ -113,13 +114,13 @@ function Team() {
               </div>
               <ul className="social-icon">
                 <li>
-                  <a href="#s" className="fa fa-twitter"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
                 </li>
                 <li>
-                  <a href="#s" className="fa fa-google"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'google']} /></a>
                 </li>
                 <li>
-                  <a href="#s" className="fa fa-behance"></a>
+                  <a href="#s"><FontAwesomeIcon icon={['fab', 'behance']} /></a>
                 </li>
               </ul>
             </div>

@@ -1,13 +1,15 @@
 import React from 'react';
-
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {
-  faUsers,
   faCertificate,
   faChartBar,
-  faPhoneAlt
+  faEnvelope,
+  faPhoneAlt,
+  faUsers
 } from '@fortawesome/free-solid-svg-icons'
+
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import {
   Preloader,
@@ -29,10 +31,12 @@ import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
 
 library.add(
-  faUsers,
+  fab,
   faCertificate,
   faChartBar,
-  faPhoneAlt
+  faEnvelope,
+  faPhoneAlt,
+  faUsers
 );
 
 function App() {
