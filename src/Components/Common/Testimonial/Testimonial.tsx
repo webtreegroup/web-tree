@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Rating } from "Components/Common";
+import { Rating } from "components";
 
 import tst1 from 'images/tst-image1.jpg';
 import tst2 from 'images/tst-image2.jpg';
