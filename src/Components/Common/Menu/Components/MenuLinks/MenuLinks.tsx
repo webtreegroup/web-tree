@@ -1,16 +1,18 @@
 import React from "react";
-import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
-
-import { IRootState } from "redux/types";
 
 function MenuLinks({ mainMenu }: any) {
   return (
     <ul className="header-navigation">
+      <li>
+        <NavLink to="/" activeClassName="active" exact>
+          Home
+        </NavLink>
+      </li>
       {mainMenu &&
         mainMenu.map((el: any) => (
           <li>
-            <NavLink to={el.link} activeClassName="active" exact>
+            <NavLink to={`/${el.slug}`} activeClassName="active" exact>
               {el.title}
             </NavLink>
           </li>
@@ -19,9 +21,4 @@ function MenuLinks({ mainMenu }: any) {
   );
 }
 
-export default connect(
-  (state: IRootState) => ({
-    mainMenu: state.mainMenu
-  }),
-  null
-)(MenuLinks);
+export default MenuLinks;

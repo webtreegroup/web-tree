@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { connect } from 'react-redux';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Logo } from "./Components";
 import { MenuLinks } from "./Components";
 
+import { getMainMenuAsync } from 'redux/actions';
+
+import { IRootState } from "redux/types";
+
 import "./Menu.scss";
 
-function Menu() {
+function Menu({
+  mainMenu,
+  getMainMenuAsync
+}: any) {
+  useEffect(() => {
+    getMainMenuAsync();
+  }, []);
+
   return (
     <section className="custom-navbar">
       <div className="container">
@@ -16,7 +28,7 @@ function Menu() {
           </div>
 
           <div className="col-7">
-            <MenuLinks />
+            <MenuLinks mainMenu={mainMenu} />
           </div>
 
           <div className="col-3">
@@ -31,4 +43,11 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default connect(
+  (state: IRootState) => ({
+    mainMenu: state.mainMenu
+  }),
+  {
+    getMainMenuAsync
+  }
+)(Menu);

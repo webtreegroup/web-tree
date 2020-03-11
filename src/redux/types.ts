@@ -1,4 +1,4 @@
-import { IMainMenu } from "api/types";
+import { IMainMenuResponse } from "api/types";
 
 export interface IAction<T> {
   type: string;
@@ -6,5 +6,5 @@ export interface IAction<T> {
 }
 
 export interface IRootState {
-  mainMenu: IMainMenu;
+  mainMenu: IMainMenuResponse[];
 }

@@ -2,28 +2,11 @@ import { GET_MAIN_MENU } from "../actions/index";
 
 import { IAction } from "redux/types";
 
-import { IMainMenu } from "api/types";
+import { IMainMenuResponse } from "api/types";
 
-const initialState = [
-  {
-    title: 'Home',
-    link: '/'
-  },
-  {
-    title: 'About',
-    link: '/about'
-  },
-  {
-    title: 'Our Services',
-    link: '/our-services'
-  },
-  {
-    title: 'Contact',
-    link: '/contact'
-  }
-];
+const initialState = [] as IMainMenuResponse[];
 
-const getMainMenu = (state = initialState, action: IAction<IMainMenu>) => {
+const getMainMenu = (state = initialState, action: IAction<IMainMenuResponse[]>) => {
   switch (action.type) {
     case GET_MAIN_MENU: {
       return action.payload;

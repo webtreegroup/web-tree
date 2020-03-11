@@ -58,29 +58,35 @@ function App() {
       <Provider store={store}>
         <div className="App">
           {/* <Preloader /> */}
+          <Menu />
           <Switch>
             <Route exact path="/">
-              home
+              <Home />
+              <Feature />
+              <About />
+              <Team />
+              <Courses />
+              <Testimonial />
+              <Contact />
             </Route>
-            <Route path="/about">
-              about
-            </Route>
-            <Route path="/our-services">
-              our services
-            </Route>
-            <Route path="/contact">
-              contact
-            </Route>
-          </Switch>
 
-          <Menu />
-          <Home />
-          <Feature />
-          <About />
-          <Team />
-          <Courses />
-          <Testimonial />
-          <Contact />
+            <Route path="/portfolio">
+              <Team />
+            </Route>
+
+            <Route path="/about">
+              <About />
+            </Route>
+
+            <Route path="/services">
+              <Courses />
+            </Route>
+
+            <Route path="/contact">
+              <Contact />
+            </Route>
+
+          </Switch>
           <Footer />
         </div>
       </Provider>
