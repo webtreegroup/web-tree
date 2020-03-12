@@ -10,10 +10,9 @@ function Feature() {
           <div className="col-md-4 col-sm-4">
             <div className="feature-thumb">
               <span>01</span>
-              <h3>Trending Courses</h3>
+              <h3>Corporate website</h3>
               <p>
-                Known is free education HTML Bootstrap Template. You can modify
-                in any way and use this for your website.
+                We can create corporate site on Wordpress, Opencart, ModX
               </p>
             </div>
           </div>
@@ -21,10 +20,9 @@ function Feature() {
           <div className="col-md-4 col-sm-4">
             <div className="feature-thumb">
               <span>02</span>
-              <h3>Books & Library</h3>
+              <h3>Landing page</h3>
               <p>
-                You are allowed to use Known HTML Template for your commercial
-                or non-commercial websites.
+                We can create landing page any difficult, using one of ready templates or develop from scratch
               </p>
             </div>
           </div>
@@ -32,10 +30,9 @@ function Feature() {
           <div className="col-md-4 col-sm-4">
             <div className="feature-thumb">
               <span>03</span>
-              <h3>Certified Teachers</h3>
+              <h3>App and SPA development</h3>
               <p>
-                Please spread a word about us. Template redistribution is NOT
-                allowed on any download website.
+                In our work we use React.js + TypeScript
               </p>
             </div>
           </div>

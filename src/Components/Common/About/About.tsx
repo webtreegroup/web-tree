@@ -12,49 +12,49 @@ function About() {
         <div className="row">
           <div className="col-md-6 col-sm-12">
             <div className="about-info">
-              <h2>
-                Start your journey to a better life with online practical
-                courses
-              </h2>
+              <div>
 
-              <figure>
-                <span>
-                  <FontAwesomeIcon icon="users" />
-                </span>
-                <figcaption>
-                  <h3>Professional Trainers</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sint ipsa voluptatibus.
-                  </p>
-                </figcaption>
-              </figure>
+                <h2>
+                  About us in a few words
+                </h2>
+                
+                <figure>
+                  <span>
+                    <FontAwesomeIcon icon="chart-bar" />
+                  </span>
+                  <figcaption>
+                    <h3>10 years in web development</h3>
+                    <p>
+                      During this time, we participated in many different projects, from creating landing pages to large corporate web portals.
+                    </p>
+                  </figcaption>
+                </figure>
 
-              <figure>
-                <span>
-                  <FontAwesomeIcon icon="certificate" />
-                </span>
-                <figcaption>
-                  <h3>International Certifications</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sint ipsa voluptatibus.
-                  </p>
-                </figcaption>
-              </figure>
+                <figure>
+                  <span>
+                    <FontAwesomeIcon icon="certificate" />
+                  </span>
+                  <figcaption>
+                    <h3>Certified specialists</h3>
+                    <p>
+                      Our experts have certificates in various web technologies.
+                    </p>
+                  </figcaption>
+                </figure>
 
-              <figure>
-                <span>
-                  <FontAwesomeIcon icon="chart-bar" />
-                </span>
-                <figcaption>
-                  <h3>Free for 3 months</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sint ipsa voluptatibus.
-                  </p>
-                </figcaption>
-              </figure>
+                <figure>
+                  <span>
+                    <FontAwesomeIcon icon="users" />
+                  </span>
+                  <figcaption>
+                    <h3>Technical support free for 1 month</h3>
+                    <p>
+                      If you create your website with us, we give you free support for 1 month.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+
             </div>
           </div>
 

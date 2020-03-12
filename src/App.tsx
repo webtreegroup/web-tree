@@ -3,8 +3,7 @@ import { Provider } from "react-redux";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -30,7 +29,8 @@ import {
   Courses,
   Testimonial,
   Contact,
-  Footer
+  Footer,
+  TechnologyStack
 } from 'components';
 
 import store from "./redux/store";
@@ -63,10 +63,10 @@ function App() {
             <Route exact path="/">
               <Home />
               <Feature />
+              <TechnologyStack />
               <About />
               <Team />
               <Courses />
-              <Testimonial />
               <Contact />
             </Route>
 

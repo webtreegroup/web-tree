@@ -9,7 +9,7 @@ function MenuLinks({ mainMenu }: any) {
           Home
         </NavLink>
       </li>
-      {mainMenu &&
+      {mainMenu.length &&
         mainMenu.map((el: any) => (
           <li>
             <NavLink to={`/${el.slug}`} activeClassName="active" exact>

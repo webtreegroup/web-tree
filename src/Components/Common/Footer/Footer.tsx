@@ -1,6 +1,6 @@
 import React from "react";
 
-import './Footer.css';
+import './Footer.scss';
 
 function Footer() {
   return (
@@ -10,31 +10,11 @@ function Footer() {
           <div className="col-md-4 col-sm-6">
             <div className="footer-info">
               <div className="section-title">
-                <h2>Headquarter</h2>
+                <h2>Copyright</h2>
               </div>
-              <address>
-                <p>
-                  1800 dapibus a tortor pretium,
-                  <br /> Integer nisl dui, ABC 12000
-                </p>
-              </address>
-
-              <ul className="social-icon">
-                <li>
-                  <a href="#s" className="fa fa-facebook-square"></a>
-                </li>
-                <li>
-                  <a href="#s" className="fa fa-twitter"></a>
-                </li>
-                <li>
-                  <a href="#s" className="fa fa-instagram"></a>
-                </li>
-              </ul>
 
               <div className="copyright-text">
-                <p>Copyright &copy; 2019 Company Name</p>
-
-                <p>Design: TemplateMo</p>
+                <p>&copy; 2020 Web Tree</p>
               </div>
             </div>
           </div>
@@ -45,14 +25,22 @@ function Footer() {
                 <h2>Contact Info</h2>
               </div>
               <address>
-                <p>+65 2244 1100, +66 1800 1100</p>
                 <p>
-                  <a href="mailto:youremail.co">hello@youremail.co</a>
+                  <a href="tel:>89179534993">+7 (917) 953-49-93</a>
+                </p>
+                <p>
+                  <a href="mailto:web-tree@yandex.ru">web-tree@yandex.ru</a>
                 </p>
               </address>
+            </div>
+          </div>
 
-              <div className="footer_menu">
+          <div className="col-md-4 col-sm-12">
+            <div className="footer-info newsletter-form">
+              <div className="section-title">
                 <h2>Quick Links</h2>
+              </div>
+              <div className="footer_menu">
                 <ul>
                   <li>
                     <a href="#s">Career</a>
@@ -67,37 +55,6 @@ function Footer() {
                     <a href="#s">Refund Policy</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 col-sm-12">
-            <div className="footer-info newsletter-form">
-              <div className="section-title">
-                <h2>Newsletter Signup</h2>
-              </div>
-              <div>
-                <div className="form-group">
-                  <form action="#" method="get">
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Enter your email"
-                      name="email"
-                      id="email"
-                    />
-                    <input
-                      type="submit"
-                      className="form-control"
-                      name="submit"
-                      id="form-submit"
-                      value="Send me"
-                    />
-                  </form>
-                  <span>
-                    <sup>*</sup> Please note - we do not spam your email.
-                  </span>
-                </div>
               </div>
             </div>
           </div>

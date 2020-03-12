@@ -6,7 +6,7 @@ function EntryForm() {
   return (
     <div className="entry-form">
       <form action="#" method="post">
-        <h2>Signup today</h2>
+        <h2>Start today</h2>
         <input
           type="text"
           name="full name"

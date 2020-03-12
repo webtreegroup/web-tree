@@ -9,3 +9,4 @@ export * from './Courses';
 export * from './Testimonial';
 export * from './Contact';
 export * from './Footer';
+export * from './TechnologyStack';

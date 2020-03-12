@@ -16,14 +16,14 @@ function Home() {
     <section id="home">
       <div className="home-slider">
         <Slider {...settings}>
+
           <div className="item item-first">
             <div className="caption">
               <div className="container">
                 <div className="col-md-6 col-sm-12">
-                  <h1>Distance Learning Education Center</h1>
+                  <h1>Open your representation in web is simple</h1>
                   <h3>
-                    Our online courses are designed to fit in your industry
-                    supporting all-round with latest technologies.
+                    We will help you to compose a technical task, draw a prototype, make up your a layout, fill it with content, develop all necessary functionality.
                   </h3>
                   <a
                     href="#feature"
@@ -40,49 +40,21 @@ function Home() {
             <div className="caption">
               <div className="container">
                 <div className="col-md-6 col-sm-12">
-                  <h1>Start your journey with our practical courses</h1>
+                  <h1>Technical support for your website</h1>
                   <h3>
-                    Our online courses are built in partnership with technology
-                    leaders and are designed to meet industry demands.
+                    We can improve design, structure, edit content, add additional functionality and more.
                   </h3>
                   <a
                     href="#courses"
                     className="section-btn btn btn-default smoothScroll"
                   >
-                    Take a course
+                    Discover more
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="item item-third">
-            <div className="caption">
-              <div className="container">
-                <div className="col-md-6 col-sm-12">
-                  <h1>Efficient Learning Methods</h1>
-                  <h3>
-                    Nam eget sapien vel nibh euismod vulputate in vel nibh.
-                    Quisque eu ex eu urna venenatis sollicitudin ut at libero.
-                    Visit{" "}
-                    <a
-                      rel="nofollow"
-                      href="https://www.facebook.com/templatemo"
-                    >
-                      templatemo
-                    </a>{" "}
-                    page.
-                  </h3>
-                  <a
-                    href="#contact"
-                    className="section-btn btn btn-default smoothScroll"
-                  >
-                    Let's chat
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </Slider>
       </div>
     </section>

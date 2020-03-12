@@ -38,3 +38,37 @@ export interface IMainMenuResponse {
   xfn: string;
   slug: string;
 }
+
+export interface ITechnologyStackResponse {
+  id: number;
+  date: string;
+  date_gmt: string;
+  guid: object;
+  modified: string;
+  modified_gmt: string;
+  slug: string;
+  status: string;
+  type: string;
+  link: string;
+  title: object;
+  author: number;
+  comment_status: string;
+  ping_status: string;
+  template: string;
+  meta: string[];
+  description: object;
+  caption: object;
+  alt_text: string;
+  media_type: string;
+  mime_type: string;
+  media_details: {
+    width: number;
+    height: number;
+    file: string;
+    sizes: object;
+    image_meta: object;
+  }
+  post: number;
+  source_url: string;
+  _links: object;
+}

@@ -1,0 +1,27 @@
+.technology-stack{
+  background: #f9f9f9;
+
+  h2 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__item-container {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    background: #ffffff;
+    text-align: left;
+    padding: 15px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: 600ms;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+  }
+} 
