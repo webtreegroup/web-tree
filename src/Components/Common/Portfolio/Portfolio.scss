@@ -1,0 +1,52 @@
+.portfolio {
+  background: #f9f9f9;
+
+  .section-title {
+    text-align: center;
+  }
+  
+  &__description {
+    padding: 20px 20px 0 20px;
+  }
+  
+  &__image {
+    max-height: 300px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  } 
+
+  &__item {
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+  
+  } 
+  
+  &__links {
+    border-top: 1px solid #f0f0f0;
+    padding: 4px 20px 0 20px;
+    list-style-type: none;
+
+    li a {
+      background: #ffffff;
+      color: #252020;
+      display: inline-block;
+      border-radius: 100px;
+      font-size: 15px;
+      height: 35px;
+      line-height: 35px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+      position: relative;
+      margin: 5px 5px 5px 0;
+    }
+  }
+}
+
+
+
+

@@ -1,8 +1,15 @@
 import React from "react";
+import { connect } from "react-redux";
+
+import { MenuLinks } from "components";
+
+import { IRootState } from "redux/types";
 
 import './Footer.scss';
 
-function Footer() {
+function Footer({
+  menu
+}: any) {
   return (
     <footer id="footer">
       <div className="container">
@@ -41,20 +48,7 @@ function Footer() {
                 <h2>Quick Links</h2>
               </div>
               <div className="footer_menu">
-                <ul>
-                  <li>
-                    <a href="#s">Career</a>
-                  </li>
-                  <li>
-                    <a href="#s">Investor</a>
-                  </li>
-                  <li>
-                    <a href="#s">Terms & Conditions</a>
-                  </li>
-                  <li>
-                    <a href="#s">Refund Policy</a>
-                  </li>
-                </ul>
+                <MenuLinks menu={menu} />
               </div>
             </div>
           </div>
@@ -64,4 +58,9 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default connect(
+  (state: IRootState) => ({
+    menu: state.mainMenu
+  }),
+  null
+)(Footer);

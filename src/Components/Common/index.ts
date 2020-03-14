@@ -10,3 +10,5 @@ export * from './Testimonial';
 export * from './Contact';
 export * from './Footer';
 export * from './TechnologyStack';
+export * from './Portfolio';
+export * from './MenuLinks';

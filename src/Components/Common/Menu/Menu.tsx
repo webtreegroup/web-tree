@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { Logo } from "./Components";
-import { MenuLinks } from "./Components";
+import { Logo } from "./components";
+import { MenuLinks } from "components";
 
 import { getMainMenuAsync } from 'redux/actions';
 
@@ -28,7 +28,9 @@ function Menu({
           </div>
 
           <div className="col-7">
-            <MenuLinks mainMenu={mainMenu} />
+            <div className="header-navigation">
+              <MenuLinks menu={mainMenu} />
+            </div>
           </div>
 
           <div className="col-3">

@@ -2,7 +2,7 @@ import React from "react";
 
 import contact from 'images/contact-image.jpg';
 
-import './Contact.css';
+import './Contact.scss';
 
 function Contact() {
   return (

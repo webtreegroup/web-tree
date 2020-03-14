@@ -1,16 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function MenuLinks({ mainMenu }: any) {
+function MenuLinks({ menu }: any) {
   return (
-    <ul className="header-navigation">
+    <ul>
       <li>
         <NavLink to="/" activeClassName="active" exact>
           Home
         </NavLink>
       </li>
-      {mainMenu.length &&
-        mainMenu.map((el: any) => (
+      {menu.length &&
+        menu.map((el: any) => (
           <li>
             <NavLink to={`/${el.slug}`} activeClassName="active" exact>
               {el.title}

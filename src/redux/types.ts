@@ -1,6 +1,6 @@
 import {
   IMainMenuResponse,
-  ITechnologyStackResponse
+  IMediaResponse
 } from "api/types";
 
 export interface IAction<T> {
@@ -10,5 +10,6 @@ export interface IAction<T> {
 
 export interface IRootState {
   mainMenu: IMainMenuResponse[];
-  technologyStack: ITechnologyStackResponse[];
+  technologyStack: IMediaResponse[];
+  portfolio: IMediaResponse[];
 }

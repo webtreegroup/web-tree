@@ -39,7 +39,7 @@ export interface IMainMenuResponse {
   slug: string;
 }
 
-export interface ITechnologyStackResponse {
+export interface IMediaResponse {
   id: number;
   date: string;
   date_gmt: string;
@@ -50,14 +50,20 @@ export interface ITechnologyStackResponse {
   status: string;
   type: string;
   link: string;
-  title: object;
+  title: {
+    rendered: string;
+  };
   author: number;
   comment_status: string;
   ping_status: string;
   template: string;
   meta: string[];
-  description: object;
-  caption: object;
+  description: {
+    rendered: string;
+  };
+  caption: {
+    rendered: string;
+  };
   alt_text: string;
   media_type: string;
   mime_type: string;

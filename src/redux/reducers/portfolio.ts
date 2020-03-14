@@ -1,4 +1,4 @@
-import { GET_TECHNOLOGY_STACK } from "../actions/index";
+import { GET_PORTFOLIO } from "../actions/index";
 
 import { IAction } from "redux/types";
 
@@ -6,9 +6,9 @@ import { IMediaResponse } from "api/types";
 
 const initialState = [] as IMediaResponse[];
 
-const technologyStack = (state = initialState, action: IAction<IMediaResponse[]>) => {
+const portfolio = (state = initialState, action: IAction<IMediaResponse[]>) => {
   switch (action.type) {
-    case GET_TECHNOLOGY_STACK: {
+    case GET_PORTFOLIO: {
       return action.payload;
     }
     default: {
@@ -17,4 +17,4 @@ const technologyStack = (state = initialState, action: IAction<IMediaResponse[]>
   }
 };
 
-export default technologyStack;
+export default portfolio;

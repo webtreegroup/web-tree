@@ -27,10 +27,10 @@ import {
   About,
   Team,
   Courses,
-  Testimonial,
   Contact,
   Footer,
-  TechnologyStack
+  TechnologyStack,
+  Portfolio
 } from 'components';
 
 import store from "./redux/store";
@@ -65,13 +65,11 @@ function App() {
               <Feature />
               <TechnologyStack />
               <About />
-              <Team />
-              <Courses />
-              <Contact />
+              <Portfolio records={4} />
             </Route>
 
             <Route path="/portfolio">
-              <Team />
+              <Portfolio />
             </Route>
 
             <Route path="/about">

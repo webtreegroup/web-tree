@@ -19,7 +19,7 @@
     line-height: 40px;
   }
 
-  .header-navigation,
+  .header-navigation ul,
   .header-phone {
     list-style-type: none;
     display: flex;
@@ -45,9 +45,9 @@
       padding-left: 22px;
     }
 
-    & > li > a:hover,
-    & > li > a:focus,
-    & > li > a.active {
+    ul > li > a:hover,
+    ul > li > a:focus,
+    ul > li > a.active {
       background-color: #29ca8e;
       color: #ffffff;
     }
