@@ -20,17 +20,14 @@ import {
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import {
-  Preloader,
-  Menu,
-  Home,
-  Feature,
   About,
-  Team,
-  Courses,
   Contact,
   Footer,
-  TechnologyStack,
-  Portfolio
+  Home,
+  Menu,
+  Portfolio,
+  Preloader,
+  Services
 } from 'components';
 
 import store from "./redux/store";
@@ -60,12 +57,9 @@ function App() {
           {/* <Preloader /> */}
           <Menu />
           <Switch>
+            
             <Route exact path="/">
               <Home />
-              <Feature />
-              <TechnologyStack />
-              <About />
-              <Portfolio records={4} />
             </Route>
 
             <Route path="/portfolio">
@@ -77,7 +71,7 @@ function App() {
             </Route>
 
             <Route path="/services">
-              <Courses />
+              <Services />
             </Route>
 
             <Route path="/contact">

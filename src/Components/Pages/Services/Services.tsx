@@ -11,9 +11,9 @@ import author2 from 'images/author-image2.jpg';
 import author3 from 'images/author-image3.jpg';
 import author4 from 'images/author-image4.jpg';
 
-import './Courses.scss';
+import './Services.scss';
 
-function Courses() {
+function Services() {
   return (
     <section id="courses" className="courses">
       <div className="container">
@@ -279,4 +279,4 @@ function Courses() {
   );
 }
 
-export default Courses;
+export default Services;

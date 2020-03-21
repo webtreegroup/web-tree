@@ -10,11 +10,7 @@ function PortfolioRecord({
     <div className="col-md-3 col-sm-6">
       <div className="portfolio__item">
         <div className="portfolio__image">
-          <img
-            src={image}
-            className="img-responsive"
-            alt=""
-          />
+          <img src={image} alt="" />
         </div>
         <div className="portfolio__description">
           <div dangerouslySetInnerHTML={{__html: caption}} />
@@ -25,7 +21,9 @@ function PortfolioRecord({
               href={`http://${title}`}
               target="_blank"
               rel="noopener noreferrer"
-            >{title}</a>
+            >
+              {title}
+            </a>
           </li>
         </ul>
       </div>
