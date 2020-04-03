@@ -8,6 +8,7 @@ import { IRootState } from "redux/types";
 import { getPortfolioAsync } from "redux/actions";
 
 import './Portfolio.scss';
+import { compose } from "redux";
 
 function Portfolio({
   portfolio,
@@ -45,11 +46,14 @@ function Portfolio({
   );
 }
 
-export default connect(
-  (state: IRootState) => ({
-    portfolio: state.portfolio
-  }),
-  {
-    getPortfolioAsync
-  }
+const mapStateToProps = (state: IRootState) => ({
+  portfolio: state.portfolio
+});
+
+const mapDispatchToProps = {
+  getPortfolioAsync
+};
+
+export default compose(
+  connect(mapStateToProps, mapDispatchToProps)
 )(Portfolio);

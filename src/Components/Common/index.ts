@@ -5,7 +5,6 @@ export * from './Offer';
 export * from './Feature';
 export * from './About';
 export * from '../Pages/Services';
-export * from './Testimonial';
 export * from '../Pages/Contact';
 export * from './Footer';
 export * from './TechnologyStack';

@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 
-import "./Home.scss";
+import "./Offer.scss";
 
-function Home() {
+function Offer() {
   const settings = {
     dots: false,
     infinite: true,
@@ -13,12 +13,12 @@ function Home() {
   };
 
   return (
-    <section id="home">
-      <div className="home-slider">
+    <section className="offer" id="offer">
+      <div className="offer-slider">
         <Slider {...settings}>
 
-          <div className="item item-first">
-            <div className="caption">
+          <div className="offer-slider__item offer-slider__item_first">
+            <div className="offer-slider__caption">
               <div className="container">
                 <div className="col-md-6 col-sm-12">
                   <h1>Open your representation in web is simple</h1>
@@ -36,8 +36,8 @@ function Home() {
             </div>
           </div>
 
-          <div className="item item-second">
-            <div className="caption">
+          <div className="offer-slider__item offer-slider__item_second">
+            <div className="offer-slider__caption">
               <div className="container">
                 <div className="col-md-6 col-sm-12">
                   <h1>Technical support for your website</h1>
@@ -61,4 +61,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Offer;

@@ -1,4 +1,4 @@
-#home {
+.offer {
   padding: 0;
 
   h1 {
@@ -14,14 +14,8 @@
   }
 }
 
-@media (min-width: 768px) {
-  .home-slider .col-md-6 {
-    padding-left: 0;
-  }
-}
-
-.home-slider {
-  .caption {
+.offer-slider {
+  &__caption {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -30,9 +24,17 @@
     height: 100%;
     color: #fff;
     cursor: e-resize;
+
+    h3 a {
+      color: #fff;
+    }
+    h3 a:hover {
+      color: #ff3;
+    }
+    
   }
 
-  .item {
+  &__item {
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: cover;
@@ -40,23 +42,12 @@
     background-color: #ff3;
   }
 
-  .item-first {
+  &__item_first {
     background-image: url(./images/slider-image1.jpg);
     background-position: center;
   }
 
-  .item-second {
+  &__item_second {
     background-image: url(./images/slider-image2.jpg);
   }
-
-  .item-third {
-    background-image: url(./images/slider-image3.jpg);
-  }
-}
-
-.caption h3 a {
-  color: #fff;
-}
-.caption h3 a:hover {
-  color: #ff3;
 }

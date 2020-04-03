@@ -13,11 +13,11 @@ import './Home.scss';
 function Home() {
   return (
     <>
-      <About />
-      <Feature />
       <Offer />
-      <Portfolio records={4} />
+      <Feature />
       <TechnologyStack />
+      <About />
+      <Portfolio records={4} />
     </>
   );
 }

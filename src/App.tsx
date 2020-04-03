@@ -63,7 +63,7 @@ function App() {
             </Route>
 
             <Route path="/portfolio">
-              <Portfolio />
+              <Portfolio records={4} />
             </Route>
 
             <Route path="/about">
