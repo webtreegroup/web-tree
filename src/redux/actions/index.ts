@@ -5,6 +5,7 @@ import { PORTFOLIO_PAGE_ID, TECHNOLOGY_STACK_PAGE_ID } from "consts";
 export const GET_MAIN_MENU = "GET_MAIN_MENU";
 export const GET_TECHNOLOGY_STACK = "GET_TECHNOLOGY_STACK";
 export const GET_PORTFOLIO = "GET_PORTFOLIO";
+export const CHECK_AUTH = "CHECK_AUTH";
 
 export const getMainMenu = (payload: any) => ({
   type: GET_MAIN_MENU,
@@ -18,6 +19,11 @@ export const getTechnologyStack = (payload: any) => ({
 
 export const getPortfolio = (payload: any) => ({
   type: GET_PORTFOLIO,
+  payload
+});
+
+export const checkAuth = (payload?: any) => ({
+  type: CHECK_AUTH,
   payload
 });
 
@@ -35,4 +41,8 @@ export const getPortfolioAsync = (records?: number) => (dispatch: any) => {
   const recordsParam = records ? records : 30;
     
   API.get(`wp/v2/media?per_page=${recordsParam}&parent=${PORTFOLIO_PAGE_ID}`).then((response) => dispatch(getPortfolio(response.data)));
+};
+
+export const checkAuthAsync = () => (dispatch: any) => {
+  dispatch(checkAuth());
 };

@@ -27,7 +27,8 @@ import {
   Menu,
   Portfolio,
   Preloader,
-  Services
+  Services,
+  Auth
 } from 'components';
 
 import store from "./redux/store";
@@ -51,38 +52,47 @@ library.add(
 
 function App() {
   return (
-    <Router>
-      <Provider store={store}>
-        <div className="App">
-          {/* <Preloader /> */}
-          <Menu />
-          <Switch>
-            
-            <Route exact path="/">
-              <Home />
-            </Route>
+    <div className="App">
+      <Router>
+        <Provider store={store}>
+          <div className="main-interface">
+            {/* <Preloader /> */}
+            <Menu />
+            <Switch>
+              
+              <Route exact path="/">
+                <Home />
+              </Route>
 
-            <Route path="/portfolio">
-              <Portfolio records={4} />
-            </Route>
+              <Route path="/portfolio">
+                <Portfolio records={4} />
+              </Route>
 
-            <Route path="/about">
-              <About />
-            </Route>
+              <Route path="/about">
+                <About />
+              </Route>
 
-            <Route path="/services">
-              <Services />
-            </Route>
+              <Route path="/services">
+                <Services />
+              </Route>
 
-            <Route path="/contact">
-              <Contact />
-            </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
 
-          </Switch>
-          <Footer />
-        </div>
-      </Provider>
-    </Router>
+            </Switch>
+            <Footer />
+          </div>
+
+          <div className="auth-screen">
+            <Route path="/auth">
+              <Auth />
+            </Route>
+          </div>
+
+        </Provider>
+      </Router>
+    </div>
   );
 }
 

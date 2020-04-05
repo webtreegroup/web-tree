@@ -10,3 +10,4 @@ export * from './Footer';
 export * from './TechnologyStack';
 export * from '../Pages/Portfolio';
 export * from './MenuLinks';
+export * from './EntryForm';

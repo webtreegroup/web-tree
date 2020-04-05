@@ -1,5 +1,7 @@
 import React from "react";
 
+import { checkAuth } from "hoc";
+
 import {
   About,
   Feature,
@@ -22,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default checkAuth(Home);

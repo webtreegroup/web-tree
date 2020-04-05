@@ -6,7 +6,7 @@ import { IMainMenuResponse } from "api/types";
 
 const initialState = [] as IMainMenuResponse[];
 
-const getMainMenu = (state = initialState, action: IAction<IMainMenuResponse[]>) => {
+const mainMenu = (state = initialState, action: IAction<IMainMenuResponse[]>) => {
   switch (action.type) {
     case GET_MAIN_MENU: {
       return action.payload;
@@ -17,4 +17,4 @@ const getMainMenu = (state = initialState, action: IAction<IMainMenuResponse[]>)
   }
 };
 
-export default getMainMenu;
+export default mainMenu;

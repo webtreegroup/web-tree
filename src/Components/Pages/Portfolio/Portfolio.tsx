@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { compose } from "redux";
 import { connect } from "react-redux";
 
 import { PortfolioRecord } from "./components";
@@ -7,8 +8,9 @@ import { IRootState } from "redux/types";
 
 import { getPortfolioAsync } from "redux/actions";
 
+import { checkAuth } from "hoc";
+
 import './Portfolio.scss';
-import { compose } from "redux";
 
 function Portfolio({
   portfolio,
@@ -54,6 +56,7 @@ const mapDispatchToProps = {
   getPortfolioAsync
 };
 
-export default compose(
+export default compose<Function>(
+  checkAuth,
   connect(mapStateToProps, mapDispatchToProps)
 )(Portfolio);
