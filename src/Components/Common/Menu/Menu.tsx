@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Logo } from "./components";
 import { MenuLinks } from "components";
+import { Test1 } from "components/UI";
 
 import { getMainMenuAsync } from 'redux/actions';
 
@@ -19,6 +20,13 @@ function Menu({
     getMainMenuAsync();
   }, []);
 
+  const [value, setValue] = useState<boolean>();
+
+  const handleClick = () => {
+    console.log('ok');
+    setValue(!value);
+  };
+
   return (
     <section className="custom-navbar">
       <div className="container">
@@ -31,6 +39,17 @@ function Menu({
             <div className="header-navigation">
               <MenuLinks menu={mainMenu} />
             </div>
+
+            <button onClick={handleClick}>shmiak blia</button>
+
+            <Test1
+              // onClick={handleClick}
+              // value={value}
+            />
+            <Test1
+              // onClick={handleClick}
+              // value={value}
+            />
           </div>
 
           <div className="col-3">
